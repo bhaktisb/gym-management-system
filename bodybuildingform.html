@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bodybuilding Registration</title>
+    <link rel="stylesheet" href="css/bodybuildingform.css">
+</head>
+<body>
+    <h2>REGISTARTION FOR BODY BUILDING </h2>
+    <form action="dbl/dbl_bodybuilding.php" method="post">
+        <label for="name">Full Name:</label><br>
+        <input type="text" id="name" name="name" required><br>
+        
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br>
+        
+        <label for="phone">Phone Number:</label><br>
+        <input type="tel" id="phone" name="phone" required pattern="[0-9]{10}" maxlength="10"><br>
+        
+        <label for="age">Age:</label><br>
+        <input type="number" id="age" name="age" required min="18"><br>
+        
+        <label for="gender">Gender:</label><br>
+        <select id="gender" name="gender" required>
+            <option value="">Select Gender</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Other">Other</option>
+        </select><br>
+        
+        <label for="experience">Years of Experience:</label><br>
+        <input type="number" id="experience" name="experience" min="0" required><br>
+        
+        <label for="goals">Fitness Goals:</label><br>
+        <textarea id="goals" name="goals" required></textarea><br>
+        
+        <label for="health_conditions">Any Existing Health Conditions:</label><br>
+        <textarea id="health_conditions" name="health_conditions"></textarea><br>
+        
+        <label for="workout_frequency">Workout Frequency (per week):</label><br>
+        <input type="number" id="workout_frequency" name="workout_frequency" min="0" required><br>
+        
+        <label for="dietary_restrictions">Dietary Restrictions:</label><br>
+        <textarea id="dietary_restrictions" name="dietary_restrictions"></textarea><br>
+        
+        <label for="preferred_training_time">Preferred Training Time:</label><br>
+        <input type="text" id="preferred_training_time" name="preferred_training_time"><br>
+        
+        <input type="submit" value="Register">
+    </form>
+</body>
+</html>
